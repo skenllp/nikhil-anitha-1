@@ -71,8 +71,9 @@
       try { ov.pause(); } catch (_) {}
       if (hasST) ScrollTrigger.refresh();
     };
-    // Hero sits beneath the opening: names begin rising while the doors dissolve, so there is never a blank or black frame.
-    playHero(animate ? 0.35 : 0);
+    // Hero sits beneath the opening, so there is never a blank frame. The video's last frame has its own baked-in names,
+    // so the live names wait until it has mostly faded; this avoids two sets of text ghosting over each other.
+    playHero(animate ? 0.85 : 0);
     if (animate) gsap.to(opening, { opacity: 0, duration: 1.5, ease: 'power2.inOut', onComplete: done });
     else done();
   }

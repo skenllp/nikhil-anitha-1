@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nikhil &amp; Anithamol | Wedding Invitation</title>
 <meta name="description" content="With God’s grace and the blessings of our families, we invite you to celebrate the wedding of Nikhil Jose and Anithamol Peter on 14 January 2027.">
-<meta name="theme-color" content="#F7F3EA">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23F7F3EA%27/%3E%3Cpath d=%27M45 18h10v22h20v10H55v32H45V50H25V40h20z%27 fill=%27%23D5BD91%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FBE9EA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23FBE9EA%27/%3E%3Cpath d=%27M45 18h10v22h20v10H55v32H45V50H25V40h20z%27 fill=%27%23770439%27/%3E%3C/svg%3E">
 <link rel="canonical" href="https://nikhil-anitha.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nikhil-anitha.vercel.app/">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/poster-opening.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="locked">
@@ -32,8 +32,9 @@
 <div id="opening" class="opening" role="dialog" aria-modal="true" aria-label="Wedding invitation opening">
   <video id="openingVideo" class="opening__video" src="assets/opening.mp4" poster="assets/poster-opening.jpg" muted playsinline preload="auto"></video>
   <div id="openingOverlay" class="opening__overlay">
+    <p class="opening__kicker" aria-hidden="true">Together with our families</p>
     <p class="opening__mono" aria-hidden="true">N <span>&amp;</span> A</p>
-    <button id="openBtn" class="btn btn--light" type="button">Open Invitation</button>
+    <button id="openBtn" class="btn btn--solid" type="button">Open Invitation</button>
   </div>
   <button id="skipBtn" class="opening__skip" type="button">Skip</button>
 </div>
@@ -46,10 +47,10 @@
 <!-- 2. HERO -->
 <section class="hero" id="hero" aria-label="Welcome">
   <div class="hero__bg" aria-hidden="true">
-    <img class="hero__fill" src="assets/hero-bible.webp" alt="" decoding="async">
+    <img class="hero__fill" src="assets/hero-plate.webp" alt="" decoding="async">
     <picture>
-      <source srcset="assets/hero-bible.webp" type="image/webp">
-      <img class="hero__img" src="assets/hero-bible.png" alt="" width="941" height="1672" fetchpriority="high">
+      <source srcset="assets/hero-plate.webp" type="image/webp">
+      <img class="hero__img" src="assets/hero-plate.jpg" alt="" width="720" height="1280" fetchpriority="high">
     </picture>
   </div>
   <div class="hero__content">
@@ -132,8 +133,8 @@
 
   <article class="chapter chapter--engage" aria-labelledby="t-eng">
     <div class="wrap chapter__in">
-      <div class="chapter__media frame frame--arch">
-        <video data-autovideo src="assets/engagement.mp4" poster="assets/poster-engagement.jpg" muted loop playsinline preload="none" aria-label="Engagement and Mylanchy video"></video>
+      <div class="chapter__media frame frame--gold">
+        <video data-autovideo src="assets/engagement.mp4" poster="assets/poster-engagement.jpg" muted loop playsinline preload="none" aria-label="Engagement and Mylanchy invitation video"></video>
       </div>
       <div class="chapter__text">
         <p class="chapter__day"><b>11</b><span>January 2027</span></p>
@@ -148,10 +149,8 @@
 
   <article class="chapter chapter--chantham chapter--flip" aria-labelledby="t-cha">
     <div class="wrap chapter__in">
-      <div class="chapter__media frame frame--glow">
-        <img src="assets/chanthamcharthal.webp" alt="A brass lamp, ceremonial bowl and gold-bordered cloth" loading="lazy" decoding="async" width="941" height="1671">
-        <span class="flame" aria-hidden="true"></span>
-        <span class="sheen" aria-hidden="true"></span>
+      <div class="chapter__media frame frame--rose">
+        <video data-autovideo src="assets/chanthamcharthal.mp4" poster="assets/poster-chantham.jpg" muted loop playsinline preload="none" aria-label="Chanthamcharthal invitation video"></video>
       </div>
       <div class="chapter__text">
         <p class="chapter__day"><b>12</b><span>January 2027</span></p>
@@ -165,8 +164,8 @@
 
   <article class="chapter chapter--wedding" aria-labelledby="t-wed">
     <div class="wrap chapter__in">
-      <div class="chapter__media frame frame--tall">
-        <video data-autovideo src="assets/wedding.mp4" poster="assets/poster-wedding.jpg" muted loop playsinline preload="none" aria-label="Illustrated wedding invitation video"></video>
+      <div class="chapter__media frame frame--crimson">
+        <video data-autovideo src="assets/wedding.mp4" poster="assets/poster-wedding.jpg" muted loop playsinline preload="none" aria-label="Wedding invitation video"></video>
       </div>
       <div class="chapter__text">
         <p class="chapter__day"><b>14</b><span>January 2027</span></p>
@@ -312,6 +311,7 @@
       <button id="replayBtn" class="btn" type="button">Replay Opening</button>
     </div>
     <p id="shareStatus" class="status" role="status" aria-live="polite"></p>
+    <p class="credit">Developed by <a href="https://sahilmuhd.com/" target="_blank" rel="noopener">Sahil</a></p>
   </div>
 </section>
 </main>

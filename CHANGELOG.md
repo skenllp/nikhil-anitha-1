@@ -38,3 +38,18 @@
 - Groom and bride portraits (arched frames) in "Two Hearts, One Promise".
 - "A Few of Our Favourite Moments": four-photo staggered gallery with a keyboard/swipe lightbox. The lantern photo was a gallery screenshot; its app menu bars were cropped off.
 - Optimised WebP copies in assets/ (portraits about 80-110 KB, gallery thumbnails about 35-95 KB, full views about 100-310 KB). Originals are kept in assets/photos/.
+
+## Blush & Lotus theme
+- New opening, engagement, Chanthamcharthal and wedding videos: re-encoded, audio stripped, about 28 MB down to about 10 MB.
+- New hero plate (`hero-plate.webp/jpg`) built from the opening video, plus new posters and og-image.
+- Removed unused old art: `hero-bible.*`, `chanthamcharthal.webp/png`, `common-bg.*`.
+- Per-chapter moods (engagement black/gold, Chanthamcharthal cream/magenta, wedding black/crimson) with rounded, stacked sheets; Save the Date and Venues slide over the section above.
+- Final section: the couple-on-swing strip was added, then removed again; the section now ends with a "Developed by Sahil" credit linking to https://sahilmuhd.com/.
+- Hero names now wait 0.85s after the opening dissolve starts.
+- Polish: verse glows now fade out inside the section (no clipped edge); 1% overscan on event videos removes the 1px dark line at the frame edge; on desktop the opening's blurred poster is now visible behind the contained video; family place names use rose instead of teal for AA contrast on blush.
+
+### Still needs real-device verification
+- Opening video playback and dissolve on a real iPhone (Safari) and Android (Chrome).
+- Autoplay of the three event videos.
+- WhatsApp preview: re-share after deploy (WhatsApp caches previews).
+- Confirm the venue names that appear inside the videos against the page's map links: St. Mary's Knanaya Syro-Malabar Church, Cherukara Vallichira (engagement); St. Augustine's Knanaya Catholic Church, Karimkunnam (Chanthamcharthal and wedding).
